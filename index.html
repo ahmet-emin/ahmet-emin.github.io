@@ -1,12 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Support Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Logic Games - Support Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+    
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: white;
+    }
+    
+    .header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      font-weight: 700;
+    }
+    
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+    
+    .card h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5rem;
+    }
+    
+    .card p {
+      margin-bottom: 1rem;
+      color: #555;
+    }
+    
+    .games-list {
+      list-style: none;
+      margin: 1rem 0;
+    }
+    
+    .games-list li {
+      background: #f8f9fa;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid #3498db;
+      transition: background-color 0.3s ease;
+    }
+    
+    .games-list li:hover {
+      background: #e9ecef;
+    }
+    
+    .games-list strong {
+      color: #2c3e50;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    
+    .contact-section {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    
+    .contact-section h2 {
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .contact-item:hover {
+      background: #e9ecef;
+    }
+    
+    .contact-item .icon {
+      width: 24px;
+      height: 24px;
+      background: #3498db;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .email-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    .email-link:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+    
+    .privacy-links {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ecf0f1;
+    }
+    
+    .privacy-links h3 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    
+    .privacy-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .privacy-link {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .privacy-link:hover {
+      background: #2980b9;
+    }
+    
+    .app-store-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background: #007aff;
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .app-store-link:hover {
+      background: #0056d3;
+      transform: translateY(-1px);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: white;
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .main-container {
+        padding: 1rem;
+      }
+      
+      .header h1 {
+        font-size: 2rem;
+      }
+      
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .privacy-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Support Page</h1>
-  <p>This is the official support page for the mobile game <strong>Word Grid: Search & Solve</strong> developed and published by <strong>Ahmet Emin</strong>.</p>
-  <p>Developer Contact: kagansgames@gmail.com</p>
+  <div class="main-container">
+    <header class="header">
+      <h1>🎮 Logic Games</h1>
+      <p>Professional support and services for mobile game development and publishing</p>
+    </header>
+    
+    <div class="content-grid">
+      <div class="card">
+        <h2>🎯 Our Games</h2>
+        <p>We develop mind-enhancing, fun and addictive mobile games:</p>
+        <ul class="games-list">
+          <li>
+            <strong>Word Grid: Search & Solve</strong>
+            Word search and puzzle game - Brain-enhancing word game
+            <br><a href="https://apps.apple.com/us/app/word-grid-search-solve/id6748872159" target="_blank" class="app-store-link">📱 Download on App Store</a>
+          </li>
+          <li>
+            <strong>Number Puzzle - Brain Game</strong>
+            Number puzzles - Improve your math skills
+            <br><a href="https://apps.apple.com/us/app/number-puzzle-brain-game/id6749150969" target="_blank" class="app-store-link">📱 Download on App Store</a>
+          </li>
+          <li>
+            <strong>Match Flow</strong>
+            Matching game - Strategy and speed game
+          </li>
+        </ul>
+      </div>
+      
+      <div class="card">
+        <h2>🛠️ Support Services</h2>
+        <p>For all kinds of issues, suggestions and feedback regarding our games:</p>
+        <ul class="games-list">
+          <li>
+            <strong>Technical Support</strong>
+            Game bugs, installation issues and performance improvements
+          </li>
+          <li>
+            <strong>In-Game Help</strong>
+            Level progression, score calculation and feature usage
+          </li>
+          <li>
+            <strong>Feedback</strong>
+            Your suggestions and improvement requests
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <section class="contact-section">
+      <h2>📞 Contact</h2>
+      <p>If you have any questions or suggestions, don't hesitate to contact us!</p>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="icon">📧</div>
+          <div>
+            <strong>Email:</strong><br>
+            <a href="mailto:kagansgames@gmail.com" class="email-link">kagansgames@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">🎮</div>
+          <div>
+            <strong>Developer:</strong><br>
+            Logic Games
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="privacy-links">
+        <h3>📋 Privacy Policies</h3>
+        <div class="privacy-list">
+          <a href="ppwh.html" class="privacy-link">Word Grid Privacy</a>
+          <a href="ppnpbg.html" class="privacy-link">Number Puzzle Privacy</a>
+          <a href="ppmf.html" class="privacy-link">Match Flow Privacy</a>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <p>© 2025 Logic Games. All rights reserved.</p>
+      <p>Mobile game development and publishing services</p>
+    </footer>
+  </div>
 </body>
 </html>
