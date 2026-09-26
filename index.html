@@ -1,200 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering & Game Development</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #050505; color: #fff; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #050505 100%); }
-        .accent-text { background: linear-gradient(to right, #6366f1, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover:hover { transform: translateY(-5px); border-color: #6366f1; transition: all 0.3s ease; }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080b12">
+    <meta name="color-scheme" content="dark">
+
+    <title>Ahmet Emin Cansızoğlu — Unity &amp; Mobile Game Developer</title>
+    <meta name="description" content="Ahmet Emin Cansızoğlu'nun Unity, C# ve mobil oyun geliştirme projeleri.">
+    <link rel="canonical" href="https://ahmet-emin.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmet-emin.github.io/">
+    <meta property="og:title" content="Ahmet Emin Cansızoğlu — Unity &amp; Mobile Game Developer">
+    <meta property="og:description" content="Unity ve C# ile geliştirilen mobil oyunlar, proje detayları ve teknik çalışmalar.">
+    <meta property="og:image" content="https://ahmet-emin.github.io/assets/images/colormatchlogo.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="assets/images/colormatchlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
-<body class="hero-gradient min-h-screen">
+<body>
+    <a class="skip-link" href="#main">İçeriğe geç</a>
 
-    <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center border-b border-white/5">
-        <div class="text-2xl font-800 tracking-tighter italic">AHMET<span class="text-indigo-500">EMİN</span></div>
-        <div class="hidden md:flex gap-8 text-sm font-medium opacity-80">
-            <a href="#projects" class="hover:text-indigo-400">Projects</a>
-            <a href="#games" class="hover:text-indigo-400">Games</a>
-            <a href="#engineering" class="hover:text-indigo-400">Engineering</a>
-            <a href="#contact" class="hover:text-indigo-400">Contact</a>
-        </div>
-    </nav>
-
-    <section class="pt-32 pb-20 px-6 text-center max-w-5xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-800 leading-tight">Building Polished Mobile Games with <span class="accent-text">Engineering Precision</span></h1>
-    </section>
-
-    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="mb-12">
-            <h2 class="text-3xl font-bold mb-2">Featured Project</h2>
-            <div class="h-1 w-20 bg-indigo-600"></div>
-        </div>
-        
-        <div class="glass rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
-            <div class="flex-1">
-                <h3 class="text-4xl font-bold mb-4">Color Match</h3>
-                <p class="text-gray-400 mb-6 leading-relaxed">
-                    Color Match redefines classic merge mechanics with a dynamic physics-based aiming system, creating a unique hybrid strategy experience. Players must master the "Smart Lock" mechanic to hunt moving targets, managing a high-stakes risk/reward balance to trigger Mega Explosions within milliseconds. Beyond a simple test of reflexes, the game offers a creative building journey; every victory powers a satisfying, ASMR-focused meta-game where players bring dormant, gray worlds back to life using a stunning "Selective Saturation" aesthetic.
-                </p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="p-4 rounded-2xl bg-white/5">
-                        <div class="text-indigo-400 font-bold mb-1">Status</div>
-                        <div class="text-sm">In Development (2026)</div>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-white/5">
-                        <div class="text-indigo-400 font-bold mb-1">Engine</div>
-                        <div class="text-sm">Unity Engine / C#</div>
-                    </div>
-                </div>
-                <a href="ppcolormerge.html" class="inline-flex items-center justify-center mt-6 bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-xl text-sm font-semibold transition">
-                    Privacy Policy
-                </a>
-            </div>
-            <div class="flex-1 w-full h-64 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 rounded-2xl border border-indigo-500/10 flex items-center justify-center overflow-hidden p-4">
-                <img src="colormatchlogo.png" alt="Color Match Logo" class="max-w-full max-h-full object-contain">
-            </div>
-        </div>
-    </section>
-
-    <!-- Published Games Section -->
-    <section id="games" class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="mb-12">
-            <h2 class="text-3xl font-bold mb-2">Published Games</h2>
-            <div class="h-1 w-20 bg-purple-600"></div>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Number Puzzle -->
-            <div class="glass rounded-2xl p-6 card-hover transition-all duration-300">
-                <div class="w-full h-40 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
-                    <img src="numbermatch.png" alt="Number Puzzle Logo" class="w-full h-full object-contain p-2">
-                </div>
-                <h3 class="text-xl font-bold mb-2">Number Puzzle</h3>
-                <p class="text-sm text-gray-400 mb-4">Brain Game - Challenge your mind with number-based puzzles.</p>
-                <div class="flex gap-2">
-                    <a href="https://apps.apple.com/us/app/number-puzzle-brain-game/id6749150969" target="_blank" class="flex-1 bg-black hover:bg-gray-900 px-3 py-2 rounded-lg text-xs font-medium text-center transition flex items-center justify-center gap-1">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        App Store
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.aemin.numbersum" target="_blank" class="flex-1 bg-black hover:bg-gray-900 px-3 py-2 rounded-lg text-xs font-medium text-center transition flex items-center justify-center gap-1">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-                        Play Store
-                    </a>
-                </div>
-            </div>
-
-            <!-- Word Grid -->
-            <div class="glass rounded-2xl p-6 card-hover transition-all duration-300">
-                <div class="w-full h-40 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
-                    <img src="wordhunt.png" alt="Word Grid Logo" class="w-full h-full object-contain p-2">
-                </div>
-                <h3 class="text-xl font-bold mb-2">Word Grid</h3>
-                <p class="text-sm text-gray-400 mb-4">Search & Solve - Find hidden words in challenging grids.</p>
-                <div class="flex gap-2">
-                    <a href="https://apps.apple.com/us/app/word-grid-search-solve/id6748872159" target="_blank" class="flex-1 bg-black hover:bg-gray-900 px-3 py-2 rounded-lg text-xs font-medium text-center transition flex items-center justify-center gap-1">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        App Store
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.aemin.kelimeara" target="_blank" class="flex-1 bg-black hover:bg-gray-900 px-3 py-2 rounded-lg text-xs font-medium text-center transition flex items-center justify-center gap-1">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-                        Play Store
-                    </a>
-                </div>
-            </div>
-
-            <!-- MatchFlow -->
-            <div class="glass rounded-2xl p-6 card-hover transition-all duration-300">
-                <div class="w-full h-40 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
-                    <img src="matchflow.png" alt="MatchFlow Logo" class="w-full h-full object-contain p-2">
-                </div>
-                <h3 class="text-xl font-bold mb-2">MatchFlow</h3>
-                <p class="text-sm text-gray-400 mb-4">Number Puzzle - Connect and match numbers in flow puzzles.</p>
-                <div class="flex gap-2">
-                    <a href="https://apps.apple.com/us/app/matchflow-number-puzzle/id6751164594" target="_blank" class="flex-1 bg-black hover:bg-gray-900 px-3 py-2 rounded-lg text-xs font-medium text-center transition flex items-center justify-center gap-1">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        App Store
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.aemin.cmath" target="_blank" class="flex-1 bg-black hover:bg-gray-900 px-3 py-2 rounded-lg text-xs font-medium text-center transition flex items-center justify-center gap-1">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-                        Play Store
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="engineering" class="py-20 bg-white/5 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-            <div>
-                <h2 class="text-3xl font-bold mb-6">Background</h2>
-                <p class="text-gray-400 mb-6">
-                    Senior Information Systems Engineering student at <strong>Sakarya University</strong>. 
-                </p>
-                <p class="text-gray-400 mb-6 leading-relaxed">
-                    My technical journey involves applying engineering principles to software and game design. I have experience in developing <strong>Decision Support Systems</strong> through TÜBİTAK-supported research projects.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="px-3 py-1 glass rounded-md text-xs text-indigo-300 border border-indigo-500/20">C# / .NET</span>
-                    <span class="px-3 py-1 glass rounded-md text-xs text-indigo-300 border border-indigo-500/20">Unity</span>
-                    <span class="px-3 py-1 glass rounded-md text-xs text-indigo-300 border border-indigo-500/20">Mobile Development</span>
-                    <span class="px-3 py-1 glass rounded-md text-xs text-indigo-300 border border-indigo-500/20">Systems Engineering</span>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 gap-4">
-                <div class="glass p-6 rounded-2xl card-hover border-l-4 border-l-indigo-500">
-                    <h4 class="font-bold text-white mb-1">TÜBİTAK 2209-A</h4>
-                    <p class="text-sm text-gray-400">Engineered "SympAI," a research-focused system for medical data analysis and decision support.</p>
-                </div>
-                <div class="glass p-6 rounded-2xl card-hover border-l-4 border-l-purple-500">
-                    <h4 class="font-bold text-white mb-1">Independent Developer</h4>
-                    <p class="text-sm text-gray-400">Successfully published multiple logic-based titles on mobile platforms with a focus on UX/UI design.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 px-6 max-w-6xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-12 italic tracking-tight underline decoration-indigo-500 decoration-4">GET IN TOUCH</h2>
-        <div class="p-10 glass rounded-3xl max-w-2xl mx-auto shadow-2xl shadow-indigo-500/5">
-            <p class="text-gray-400 mb-6 italic font-medium">For business inquiries, project collaboration, or game support:</p>
-            <a href="mailto:ahmet.cansizoglu@ogr.sakarya.edu.tr" class="text-xl md:text-2xl font-bold text-indigo-400 hover:text-indigo-300 transition break-all">
-                ahmet.cansizoglu@ogr.sakarya.edu.tr
+    <header class="site-header" data-header>
+        <div class="header-inner shell">
+            <a class="brand" href="#top" aria-label="Ahmet Emin ana sayfa">
+                <span class="brand-mark" aria-hidden="true">AE</span>
+                <span class="brand-name">Ahmet Emin</span>
             </a>
-            <div class="my-3 text-gray-500">or</div>
-            <a href="mailto:kagansgames@gmail.com" class="text-xl md:text-2xl font-bold text-purple-400 hover:text-purple-300 transition break-all">
-                kagansgames@gmail.com
-            </a>
-            <div class="mt-6">
-                <a href="https://www.linkedin.com/in/ahmetemincansizoglu/" target="_blank" class="inline-flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] px-6 py-3 rounded-xl font-semibold transition">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    LinkedIn
-                </a>
-            </div>
-            <div class="mt-8 flex flex-wrap justify-center gap-4 text-xs opacity-60">
-                <a href="ppwh.html" class="hover:underline">Word Grid Privacy</a>
-                <span>•</span>
-                <a href="ppnpbg.html" class="hover:underline">Number Puzzle Privacy</a>
-                <span>•</span>
-                <a href="ppmf.html" class="hover:underline">Match Flow Privacy</a>
-                <span>&bull;</span>
-                <a href="ppcolormerge.html" class="hover:underline">Color Merge Privacy</a>
-            </div>
-        </div>
-    </section>
 
-    <footer class="py-12 border-t border-white/5 text-center text-gray-600 text-sm">
-        <p>© 2026 Ahmet Emin Cansızoğlu. Sakarya, Turkey.</p>
-        <p class="mt-2 text-xs">Developed by Ahmet Emin Cansızoğlu</p>
-        <div class="mt-6 opacity-30 text-[10px] uppercase tracking-[0.2em]">
-            Exploring industry-standard tools for audio innovation
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Ana navigasyon">
+                <a href="#projects">Projeler</a>
+                <a href="#skills">Yetenekler</a>
+                <a class="nav-contact" href="#contact">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero shell" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy reveal">
+                <p class="section-label">Portfolyo / 2026</p>
+                <h1 id="hero-title">Ahmet Emin Cansızoğlu</h1>
+                <p class="hero-role">Unity &amp; Mobile Game Developer</p>
+                <div class="hero-summary">
+                    <p>Mobil oyunlar geliştiriyorum. Fikir aşamasından geliştirme, analitik, monetizasyon ve yayınlama süreçlerine kadar tüm üretim sürecini kendim yönetiyorum.</p>
+                    <p>App Store ve Google Play’de yayınlanmış birden fazla oyunum bulunuyor. Bu süreçlerde oyun tasarımı, teknik geliştirme, performans optimizasyonu, oyun analitiği ve mağaza yayın süreçleri üzerinde çalışıyorum.</p>
+                    <p>Ayrıca TÜBİTAK 2209-A kapsamında desteklenen projemde yapay zekâ destekli bir karar destek sistemi geliştirdim ve veri analizi ile tahmine dayalı modelleme süreçlerinde çalıştım.</p>
+                </div>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Projeleri incele <span aria-hidden="true">↓</span></a>
+                    <a class="button button-secondary" href="mailto:ahmetemincansizoglu@gmail.com">E-posta gönder <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+
+            <dl class="hero-stats reveal" style="--delay: 180ms" aria-label="Portfolyo özeti">
+                <div><dt>06</dt><dd>Seçili proje</dd></div>
+                <div><dt>04</dt><dd>Yayınlanmış oyun</dd></div>
+                <div><dt>02</dt><dd>Mobil platform</dd></div>
+                <div><dt>01</dt><dd>Bağımsız geliştirici</dd></div>
+            </dl>
+        </section>
+
+        <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+            <div class="shell">
+                <header class="section-header reveal">
+                    <div>
+                        <p class="section-label">01 / Portfolyo</p>
+                        <h2 id="projects-title">Seçili Projeler</h2>
+                    </div>
+                    <p>Mobil oyun ve araştırma çalışmalarından seçili projeler.</p>
+                </header>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal" id="project-lock-launch">
+                        <div class="project-visual visual-color-merge">
+                            <img src="assets/images/colormatchlogo.png" alt="Lock & Launch oyun ikonu" width="512" height="512">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline"><span>Yayınlandı</span><span>iOS / Android</span></div>
+                            <h3>Lock &amp; Launch</h3>
+                            <p>Fizik tabanlı atış sistemi ile zamanlamalı Smart Lock mekaniğini birleştiren portre mobil puzzle oyunu.</p>
+                            <div class="project-actions">
+                                <a href="https://apps.apple.com/us/app/lock-launch/id6777688750" target="_blank" rel="noopener noreferrer">App Store <span>↗</span></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.aemin.ColorMergeLockPop" target="_blank" rel="noopener noreferrer">Google Play <span>↗</span></a>
+                                <a href="privacy/ppcolormerge.html">Gizlilik <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" id="project-number-puzzle">
+                        <div class="project-visual visual-blue">
+                            <img src="assets/images/numbermatch.png" alt="Number Puzzle oyun ikonu" width="500" height="500">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline"><span>Yayınlandı</span><span>iOS / Android</span></div>
+                            <h3>Number Puzzle</h3>
+                            <p>Kısa ve odaklı oyun seansları için tasarlanmış sayı toplamı bulmaca oyunu.</p>
+                            <div class="project-actions">
+                                <a href="https://apps.apple.com/us/app/number-puzzle-brain-game/id6749150969" target="_blank" rel="noopener noreferrer">App Store <span>↗</span></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.aemin.numbersum" target="_blank" rel="noopener noreferrer">Google Play <span>↗</span></a>
+                                <a href="privacy/ppnpbg.html">Gizlilik <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" id="project-word-grid" style="--delay: 60ms">
+                        <div class="project-visual visual-orange">
+                            <img src="assets/images/wordhunt.png" alt="Word Grid oyun ikonu" width="500" height="500">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline"><span>Yayınlandı</span><span>iOS / Android</span></div>
+                            <h3>Word Grid</h3>
+                            <p>Kompakt harf tablolarında gizli kelimeleri bulmaya dayalı mobil kelime oyunu.</p>
+                            <div class="project-actions">
+                                <a href="https://apps.apple.com/us/app/word-grid-search-solve/id6748872159" target="_blank" rel="noopener noreferrer">App Store <span>↗</span></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.aemin.kelimeara" target="_blank" rel="noopener noreferrer">Google Play <span>↗</span></a>
+                                <a href="privacy/ppwh.html">Gizlilik <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" id="project-matchflow">
+                        <div class="project-visual visual-green">
+                            <img src="assets/images/matchflow.png" alt="MatchFlow oyun ikonu" width="500" height="500">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline"><span>Yayınlandı</span><span>iOS / Android</span></div>
+                            <h3>MatchFlow</h3>
+                            <p>Okunabilir oyun tahtaları ve hızlı kararlar üzerine kurulu renkli sayı eşleştirme oyunu.</p>
+                            <div class="project-actions">
+                                <a href="https://apps.apple.com/us/app/matchflow-number-puzzle/id6751164594" target="_blank" rel="noopener noreferrer">App Store <span>↗</span></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.aemin.cmath" target="_blank" rel="noopener noreferrer">Google Play <span>↗</span></a>
+                                <a href="privacy/ppmf.html">Gizlilik <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-erp reveal" id="project-erp" style="--delay: 60ms">
+                        <div class="project-visual visual-erp" aria-hidden="true">
+                            <div class="erp-mark">ERP</div>
+                            <div class="erp-flow"><span>MRP</span><span>BOM</span><span>ATP</span></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline"><span>Kişisel Proje</span><span>ERP / Planlama</span></div>
+                            <h3>ERP Tabanlı Üretim ve Malzeme Planlama Sistemi</h3>
+                            <p>SAP süreçlerinden esinlenen; MRP, BOM, routing, iş merkezleri, kapasite, stok, satın alma, ATP, FEFO ve kalite akışlarını birleştiren modüler ERP prototipi.</p>
+                            <div class="project-tags"><span>React</span><span>Flask</span><span>SQLite</span><span>Python</span><span>REST API</span></div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ahmet-emin/ERP" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-research reveal" id="project-tubitak">
+                        <div class="project-visual visual-research" aria-hidden="true">
+                            <span>AI</span>
+                            <i></i><i></i><i></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline"><span>May 2025 – Haz 2025</span><span>TÜBİTAK 2209-A</span></div>
+                            <h3>AI-Powered Web-Based Clinical Decision Support System for Symptom-Oriented Diagnosis</h3>
+                            <p>A TÜBİTAK 2209-A supported project focused on an AI-powered decision support system for symptom-based disease prediction. I worked on machine learning, data analysis, predictive modeling, and web application development.</p>
+                            <div class="project-tags"><span>Machine Learning</span><span>Data Analysis</span><span>Predictive Modeling</span><span>Web Development</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+            <div class="shell">
+                <header class="section-header reveal">
+                    <div>
+                        <p class="section-label">02 / Yetenekler</p>
+                        <h2 id="skills-title">Yetenekler</h2>
+                    </div>
+                    <p>Projelerde doğrudan kullandığım teknoloji, sistem ve platformlar.</p>
+                </header>
+
+                <div class="skills-grid">
+                    <article class="skill-group reveal">
+                        <span>01</span><h3>Oyun Geliştirme</h3>
+                        <ul><li>Unity ve C#</li><li>Gameplay Systems</li><li>Progression Systems</li><li>Mobile Performance Optimization</li><li>Object Pooling</li><li>ScriptableObjects</li><li>Custom Unity Editor Tools</li></ul>
+                        <div class="skill-links">
+                            <strong>İlgili bağlantılar</strong>
+                            <div><a href="#project-lock-launch">Lock &amp; Launch</a><a href="#project-matchflow">MatchFlow</a><a href="#project-number-puzzle">Number Puzzle</a><a href="#project-word-grid">Word Grid</a></div>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal" style="--delay: 60ms">
+                        <span>02</span><h3>Analitik, Monetizasyon &amp; Yayın</h3>
+                        <ul><li>GameAnalytics</li><li>ironSource ve AdMob</li><li>In-App Purchase (IAP)</li><li>Android ve iOS</li><li>Google Play Console</li><li>App Store Connect</li><li>Yerelleştirme</li></ul>
+                        <div class="skill-links">
+                            <strong>İlgili bağlantılar</strong>
+                            <div><a href="#project-lock-launch">Lock &amp; Launch</a><a href="#project-matchflow">MatchFlow</a></div>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal" style="--delay: 120ms">
+                        <span>03</span><h3>ERP &amp; Planlama</h3>
+                        <ul><li>SAP S/4HANA Cloud</li><li>MRP ve Üretim Planlama</li><li>BOM ve Routing</li><li>Kapasite Planlama</li><li>Stok ve Satın Alma</li><li>ATP ve FEFO</li><li>Kalite süreçleri</li></ul>
+                        <div class="skill-links">
+                            <strong>İlgili bağlantılar</strong>
+                            <div><a href="#project-erp">ERP Projesi</a><a href="https://github.com/ahmet-emin/ERP" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+                        </div>
+                    </article>
+                    <article class="skill-group reveal" style="--delay: 180ms">
+                        <span>04</span><h3>Yazılım, Veri &amp; AI</h3>
+                        <ul><li>Python ve SQL</li><li>Flask, React ve SQLite</li><li>REST API ve JWT</li><li>Machine Learning</li><li>Veri Analizi</li><li>Tahmine Dayalı Modelleme</li><li>Web Uygulama Geliştirme</li></ul>
+                        <div class="skill-links">
+                            <strong>İlgili bağlantılar</strong>
+                            <div><a href="#project-tubitak">TÜBİTAK 2209-A</a><a href="#project-erp">ERP Projesi</a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="shell contact-layout">
+                <div class="reveal">
+                    <p class="section-label">03 / İletişim</p>
+                    <h2 id="contact-title">İletişim</h2>
+                </div>
+                <div class="contact-details reveal" style="--delay: 60ms">
+                    <a class="contact-email" href="mailto:ahmetemincansizoglu@gmail.com">ahmetemincansizoglu@gmail.com <span aria-hidden="true">↗</span></a>
+                    <div class="contact-row">
+                        <a href="https://www.linkedin.com/in/ahmetemincansizoglu/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-main">
+            <a class="footer-brand" href="#top"><span>AE</span> Ahmet Emin Cansızoğlu</a>
+            <nav class="footer-policies" aria-label="Gizlilik politikaları">
+                <a href="privacy/ppwh.html">Word Grid</a>
+                <a href="privacy/ppnpbg.html">Number Puzzle</a>
+                <a href="privacy/ppmf.html">MatchFlow</a>
+                <a href="privacy/ppcolormerge.html">Lock &amp; Launch</a>
+            </nav>
+        </div>
+        <div class="shell footer-bottom">
+            <p>© <span id="year">2026</span> Ahmet Emin Cansızoğlu</p>
+            <a href="#top">Yukarı dön ↑</a>
         </div>
     </footer>
-
 </body>
 </html>

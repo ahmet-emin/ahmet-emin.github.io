@@ -1,0 +1,5 @@
+# Local CV and document exports
+/*.pdf
+
+# Local review/render artifacts
+/tmp/

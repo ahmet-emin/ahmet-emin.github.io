@@ -1,4 +1,4 @@
-# **Privacy Policy for Color Merge: Lock & Pop**
+# **Privacy Policy for Lock & Launch**
 
 **Last updated: June 8, 2026**
 
@@ -12,7 +12,7 @@ We use Your data to provide and improve the Service. By using the Service, You a
 
 For the purposes of this Privacy Policy:
 
-* **Application:** Refers to **Color Merge: Lock & Pop**, the software program provided by the Company.  
+* **Application:** Refers to **Lock & Launch**, the software program provided by the Company.  
 * **Company:** Refers to **VIVIXGAMES**, Turkey.  
 * **Device:** Means any device that can access the Service such as a cellphone or a digital tablet.  
 * **Personal Data:** Is any information that relates to an identified or identifiable individual.  
@@ -77,7 +77,7 @@ Our Service does not address anyone under the age of 13\. We do not knowingly co
 
 Since we do not use an account system, we do not store personal profiles. However, if you wish to request the deletion of any data associated with your device identifier or purchase history, please contact us.
 
-* **Data Deletion Requests:** You can send your request to **colormergelockpop@gmail.com**. We will process your request in accordance with applicable laws.
+* **Data Deletion Requests:** You can send your request to **ahmetemincansizoglu@gmail.com**. We will process your request in accordance with applicable laws.
 
 ## **8\. Changes to this Privacy Policy**
 
@@ -87,6 +87,4 @@ We may update Our Privacy Policy from time to time. We will notify You of any ch
 
 If you have any questions about this Privacy Policy, You can contact us:
 
-* **By email:** colormergelockpop@gmail.com
-
-
+* **By email:** ahmetemincansizoglu@gmail.com
