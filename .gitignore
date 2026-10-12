@@ -1,5 +1,6 @@
 # Local CV and document exports
 /*.pdf
+/CVLER/
 
 # Local review/render artifacts
 /tmp/
